@@ -14,3 +14,9 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+Contacts: 
+- LinkedIn: https://www.linkedin.com/in/kirillbelovtest
+- Telegram: https://t.me/kirillbelovtest
+- Email:    kirillbelovtest@gmail.com
+- Phone:    +7 906 155-19-02
