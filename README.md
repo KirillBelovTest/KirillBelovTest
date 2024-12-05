@@ -17,4 +17,5 @@ Here are some ideas to get you started:
 
 Contacts: 
 - LinkedIn: https://www.linkedin.com/in/kirillbelovtest
+- Habr:     https://habr.com/ru/users/KirillBelovTest/
 - Email:    kirillbelovtest@gmail.com
