@@ -50,10 +50,7 @@ saveResponse = Function[{id, response},
             StringTake[StringTemplate["000000`1`.`2`.html"][id, statusCode], -16]}];
         Export[file, body, "Text"];
     ]
-]
-
-
-Echo[startTime = AbsoluteTime[]]
+];
 
 
 Module[{tasks, responses},
@@ -61,16 +58,15 @@ Module[{tasks, responses},
         tasks = Table[
             With[{$id = id, url = articleUrl[id]}, 
                 ParallelSubmit[
-                    Print["--------------------------"];
-                    Print["[", DateString[], "]: ", url];
+                    Print["--------------------------\n[", DateString[], "]: ", url];
                     $id -> URLRead[url]
                 ]
             ],
-            {id, i, i + step - 1}
+            {id, i, Min[i + step - 1, lastId]}
         ]; 
         
         responses = Association[WaitAll[tasks]];
         KeyValueMap[saveResponse, responses], 
-        {i, firstId + 1, firstId + 5000, step}
+        {i, firstId + 1, Min[firstId + 5000, lastId], step}
     ]
 ];
