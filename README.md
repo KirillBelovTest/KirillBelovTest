@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-Aout me - [WLJS Notebook creator](https://github.com/WLJSTeam/wljs-notebook)
+About me - [WLJS Notebook creator](https://github.com/WLJSTeam/wljs-notebook)
 
 Contacts: 
 - LinkedIn: https://www.linkedin.com/in/kirillbelovtest
